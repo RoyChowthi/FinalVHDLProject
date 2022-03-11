@@ -1,0 +1,104 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Fri Dec  6 12:23:43 2019
+| Host         : picosec running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Lab5_control_sets_placed.rpt
+| Design       : Lab5
+| Device       : xc7z010
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    26 |
+|    Minimum number of control sets                        |    26 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    62 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    26 |
+| >= 0 to < 4        |     4 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     3 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    17 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              87 |           39 |
+| No           | No                    | Yes                    |               6 |            2 |
+| No           | Yes                   | No                     |              89 |           35 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             460 |          119 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------+----------------------------+------------------------------------------------------------------------------------+------------------+----------------+
+|          Clock Signal          |        Enable Signal       |                                  Set/Reset Signal                                  | Slice Load Count | Bel Load Count |
++--------------------------------+----------------------------+------------------------------------------------------------------------------------+------------------+----------------+
+|  blue_temp_reg[5]_i_1_n_0      |                            | blue_temp_reg[0]_i_1_n_0                                                           |                1 |              1 |
+|  pixel_clock_gen/inst/clk_out1 | velocityofobstacles0_in[2] | velocityofobstacles[2]                                                             |                1 |              1 |
+|  blue_temp_reg[5]/G0           |                            |                                                                                    |                1 |              1 |
+|  pixel_clock_gen/inst/clk_out1 |                            | hdmi_controller/ClockGenInternal.ClockGenX/in0                                     |                1 |              2 |
+|  pixel_clock_gen/inst/clk_out1 |                            | hdmi_controller/ClockGenInternal.ClockGenX/LockLostReset/SyncAsyncx/oSyncStages[1] |                1 |              4 |
+|  pixel_clock_gen/inst/clk_out1 |                            | timing_inst/rgb_data[8]                                                            |                2 |              9 |
+|  pixel_clock_gen/inst/clk_out1 |                            | hdmi_controller/DataEncoders[0].DataEncoder/pDataOutRaw[9]_i_1_n_0                 |                5 |             10 |
+|  pixel_clock_gen/inst/clk_out1 |                            | timing_inst/vpos_ena                                                               |                5 |             11 |
+|  pixel_clock_gen/inst/clk_out1 | timing_inst/hpos_clr0      | timing_inst/vpos_clr                                                               |                6 |             11 |
+|  pixel_clock_gen/inst/clk_out1 |                            | counter[26]_i_1_n_0                                                                |                7 |             26 |
+|  pixel_clock_gen/inst/clk_out1 |                            | hdmi_controller/DataEncoders[0].DataEncoder/SR[0]                                  |               15 |             32 |
+|  pixel_clock_gen/inst/clk_out1 | hposofplayer[0]_i_2_n_0    | hposofplayer[0]_i_1_n_0                                                            |                8 |             32 |
+|  pixel_clock_gen/inst/clk_out1 | slow_clk_reg_n_0           | hor_pos3a[31]_i_1_n_0                                                              |                8 |             32 |
+|  pixel_clock_gen/inst/clk_out1 | slow_clk_reg_n_0           | hor_pos3b[31]_i_1_n_0                                                              |                8 |             32 |
+|  pixel_clock_gen/inst/clk_out1 | slow_clk_reg_n_0           | hor_pos4a[31]_i_1_n_0                                                              |                8 |             32 |
+|  pixel_clock_gen/inst/clk_out1 | slow_clk_reg_n_0           | hor_pos4b[31]_i_1_n_0                                                              |                8 |             32 |
+|  pixel_clock_gen/inst/clk_out1 | slow_clk_reg_n_0           | hor_pos5a[31]_i_1_n_0                                                              |                8 |             32 |
+|  pixel_clock_gen/inst/clk_out1 | slow_clk_reg_n_0           | hor_pos5b[31]_i_1_n_0                                                              |                8 |             32 |
+|  pixel_clock_gen/inst/clk_out1 | slow_clk_reg_n_0           | hor_pos6a[31]_i_1_n_0                                                              |                8 |             32 |
+|  pixel_clock_gen/inst/clk_out1 | slow_clk_reg_n_0           | hor_pos1a[31]_i_1_n_0                                                              |                8 |             32 |
+|  pixel_clock_gen/inst/clk_out1 | slow_clk_reg_n_0           | hor_pos1b[31]_i_1_n_0                                                              |                8 |             32 |
+|  pixel_clock_gen/inst/clk_out1 | slow_clk_reg_n_0           | hor_pos2a[31]_i_1_n_0                                                              |                8 |             32 |
+|  pixel_clock_gen/inst/clk_out1 | slow_clk_reg_n_0           | hor_pos2b[31]_i_1_n_0                                                              |                8 |             32 |
+|  pixel_clock_gen/inst/clk_out1 | slow_clk_reg_n_0           | hor_pos6b[31]_i_1_n_0                                                              |                8 |             32 |
+|  pixel_clock_gen/inst/clk_out1 | vposofplayer[0]_i_1_n_0    | hposofplayer[0]_i_1_n_0                                                            |                8 |             32 |
+|  pixel_clock_gen/inst/clk_out1 |                            |                                                                                    |               38 |             86 |
++--------------------------------+----------------------------+------------------------------------------------------------------------------------+------------------+----------------+
+
+

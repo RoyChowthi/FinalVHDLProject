@@ -1,0 +1,140 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Dec  6 10:06:57 2019
+# Process ID: 11920
+# Current directory: E:/FinalProject
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7504 E:\FinalProject\FinalProject.xpr
+# Log file: E:/FinalProject/vivado.log
+# Journal file: E:/FinalProject\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/FinalProject/FinalProject.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/FinalProject/FinalProject.runs/impl_1/Lab5.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/FinalProject/FinalProject.runs/impl_1/Lab5.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/FinalProject/FinalProject.runs/impl_1/Lab5.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/FinalProject/FinalProject.runs/impl_1/Lab5.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/FinalProject/FinalProject.runs/impl_1/Lab5.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/FinalProject/FinalProject.runs/impl_1/Lab5.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/FinalProject/FinalProject.runs/impl_1/Lab5.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/FinalProject/FinalProject.runs/impl_1/Lab5.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/FinalProject/FinalProject.runs/impl_1/Lab5.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/FinalProject/FinalProject.runs/impl_1/Lab5.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/FinalProject/FinalProject.runs/impl_1/Lab5.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/FinalProject/FinalProject.runs/impl_1/Lab5.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/FinalProject/FinalProject.runs/impl_1/Lab5.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/FinalProject/FinalProject.runs/impl_1/Lab5.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/FinalProject/FinalProject.runs/impl_1/Lab5.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/FinalProject/FinalProject.runs/impl_1/Lab5.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]

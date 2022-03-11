@@ -1,0 +1,92 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Fri Dec  6 12:24:11 2019
+| Host         : picosec running 64-bit major release  (build 9200)
+| Command      : report_methodology -file Lab5_methodology_drc_routed.rpt -pb Lab5_methodology_drc_routed.pb -rpx Lab5_methodology_drc_routed.rpx
+| Design       : Lab5
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 11
++-----------+----------+------------------------------+------------+
+| Rule      | Severity | Description                  | Violations |
++-----------+----------+------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert | 2          |
+| SYNTH-13  | Warning  | combinational multiplier     | 7          |
+| TIMING-20 | Warning  | Non-clocked latch            | 2          |
++-----------+----------+------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell blue_temp_reg[0]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) blue_temp_reg[0]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell hdmi_controller/ClockGenInternal.ClockGenX/pLockWasLost0, with 2 or more inputs, drives asynchronous preset/clear pin(s) hdmi_controller/LockLostReset/SyncAsyncx/oSyncStages_reg[0]/PRE, hdmi_controller/LockLostReset/SyncAsyncx/oSyncStages_reg[1]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+SYNTH-13#1 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance red_data2.
+Related violations: <none>
+
+SYNTH-13#2 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance red_data2__0.
+Related violations: <none>
+
+SYNTH-13#3 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance red_data2__1.
+Related violations: <none>
+
+SYNTH-13#4 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance red_data2__2.
+Related violations: <none>
+
+SYNTH-13#5 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance red_data3.
+Related violations: <none>
+
+SYNTH-13#6 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance red_data3__0.
+Related violations: <none>
+
+SYNTH-13#7 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance red_data3__1.
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch blue_temp_reg[0] cannot be properly analyzed as its control pin blue_temp_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch blue_temp_reg[5]/L7 (in blue_temp_reg[5] macro) cannot be properly analyzed as its control pin blue_temp_reg[5]/L7/G is not reached by a timing clock
+Related violations: <none>
+
+
